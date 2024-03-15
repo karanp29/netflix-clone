@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* :root{
+  --btn-red :  rgb(229, 9, 20);
+  --btn-red-hover : rgb(193, 17, 25)
+} */
+:root{
+  color: white;
+}
