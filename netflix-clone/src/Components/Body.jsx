@@ -6,11 +6,11 @@ const Body = () => {
   const appRouter = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Home page={"home"} />,
     },
     {
       path: "/login",
-      element: <Login />,
+      element: <Login page={"login"} />,
     },
     {
       path: "/browse",

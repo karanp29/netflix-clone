@@ -1,16 +1,19 @@
 import Header from "./Header";
+import Hero from "./Hero";
+import PropTypes from "prop-types";
+
 // import { MdButton, SmButton } from "./Buttons";
-const Login = () => {
+const Login = ({ page }) => {
   return (
     <>
       <Header></Header>
-      {/* <MdButtons content={"Get Started"}></MdButtons>
-      <SmButtons content={"login"}></SmButtons> */}
-      <div>Login Page</div>
+      <Hero page={page}></Hero>
     </>
   );
 };
 
-Login.propTypes = {};
+Login.propTypes = {
+  page: PropTypes.string,
+};
 
 export default Login;

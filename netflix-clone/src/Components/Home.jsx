@@ -1,13 +1,18 @@
+import PropTypes from "prop-types";
+
 import Header from "./Header";
-import Hero from "./Hero"
-const Home = () => {
+import Hero from "./Hero";
+const Home = ({ page }) => {
   return (
     <>
       <Header></Header>
-      <Hero></Hero>
-      <h1 className="text-black">HOME PAge</h1>
+      <Hero page={page}></Hero>
     </>
   );
+};
+
+Home.propTypes = {
+  page: PropTypes.string,
 };
 
 export default Home;
